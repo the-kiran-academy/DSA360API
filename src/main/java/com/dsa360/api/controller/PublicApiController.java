@@ -42,7 +42,7 @@ public class PublicApiController {
 	}
 
 	@GetMapping("/get-dsa-application/{dsaId}")
-	public ResponseEntity<DSAApplicationDTO> getDsaApplicationData(@PathVariable String dsaId){
+	public ResponseEntity<DSAApplicationDTO> getDsaApplicationData(@PathVariable String dsaId) {
 
 		DSAApplicationDTO dsaById = dsaService.getDSAById(dsaId);
 
@@ -101,5 +101,9 @@ public class PublicApiController {
 			return new ResponseEntity<>("Email Verification Successfully Completed !!", HttpStatus.NOT_FOUND);
 		}
 	}
-
+	
+	@GetMapping("/hello")
+	public String hello() {
+		return "hello";
+	}
 }
