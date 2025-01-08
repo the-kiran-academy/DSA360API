@@ -101,7 +101,8 @@ public class PublicApiController {
 			return new ResponseEntity<>("Email Verification Successfully Completed !!", HttpStatus.NOT_FOUND);
 		}
 	}
-
+	
+	@GetMapping("/hello")
 	public String hello() {
 		return "hello";
 	}
