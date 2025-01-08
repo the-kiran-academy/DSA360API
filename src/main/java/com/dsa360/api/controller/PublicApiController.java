@@ -101,5 +101,9 @@ public class PublicApiController {
 			return new ResponseEntity<>("Email Verification Successfully Completed !!", HttpStatus.NOT_FOUND);
 		}
 	}
+	
+	public String hellow() {
+		return "hellow";
+	}
 
 }
