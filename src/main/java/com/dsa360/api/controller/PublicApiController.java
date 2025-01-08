@@ -103,7 +103,7 @@ public class PublicApiController {
 	}
 	
 	public String hellow() {
-		return "hellow";
+		return "hellow worrld";
 	}
 
 }
